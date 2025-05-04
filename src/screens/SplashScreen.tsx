@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, StyleSheet, Animated} from 'react-native';
+import {View, Animated, StyleSheet} from 'react-native';
 import Logo from '../components/Logo';
 
 const SplashScreen = ({navigation}: any) => {

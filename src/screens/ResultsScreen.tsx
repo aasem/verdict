@@ -1,56 +1,29 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {View, Text, StyleSheet, ScrollView, SafeAreaView} from 'react-native';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+import type {RootStackParamList} from '../../App';
 
-const ResultsScreen = ({route}: any) => {
-  const {responses} = route.params;
+type Props = NativeStackScreenProps<RootStackParamList, 'Results'>;
 
-  const calculateResults = () => {
-    const total = Object.keys(responses).length;
-    const yesCount = Object.values(responses).filter(r => r === 'Yes').length;
-    const noCount = total - yesCount;
-
-    return {
-      total,
-      yesCount,
-      noCount,
-      yesPercentage: ((yesCount / total) * 100).toFixed(1),
-      noPercentage: ((noCount / total) * 100).toFixed(1),
-    };
-  };
-
-  const results = calculateResults();
+const ResultsScreen = ({route}: Props) => {
+  const {traits, questionCount} = route.params;
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Your Results</Text>
-      
-      <View style={styles.summaryContainer}>
-        <Text style={styles.summaryText}>
-          Total Scenarios: {results.total}
-        </Text>
-        <Text style={styles.summaryText}>
-          Yes Responses: {results.yesCount} ({results.yesPercentage}%)
-        </Text>
-        <Text style={styles.summaryText}>
-          No Responses: {results.noCount} ({results.noPercentage}%)
-        </Text>
-      </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.content}>
+        <Text style={styles.title}>Game Results</Text>
+        <Text style={styles.subtitle}>Questions Answered: {questionCount}</Text>
 
-      <View style={styles.detailsContainer}>
-        <Text style={styles.detailsTitle}>Detailed Responses:</Text>
-        {Object.entries(responses).map(([scenarioId, response]) => (
-          <View key={scenarioId} style={styles.responseItem}>
-            <Text style={styles.scenarioId}>Scenario {scenarioId}</Text>
-            <Text style={[
-              styles.response,
-              response === 'Yes' ? styles.yesResponse : styles.noResponse
-            ]}>
-              {response}
-            </Text>
-          </View>
-        ))}
-      </View>
-    </ScrollView>
+        <View style={styles.traitsContainer}>
+          {Object.entries(traits).map(([key, trait]) => (
+            <View key={key} style={styles.traitRow}>
+              <Text style={styles.traitName}>{trait.name}</Text>
+              <Text style={styles.traitScore}>{trait.score}</Text>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -58,52 +31,42 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-    padding: 20,
+  },
+  content: {
+    flex: 1,
+    padding: 16,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    textAlign: 'center',
-    marginVertical: 20,
+    marginBottom: 8,
+    color: '#000000',
   },
-  summaryContainer: {
-    backgroundColor: '#F5F5F5',
-    padding: 20,
-    borderRadius: 10,
-    marginBottom: 20,
-  },
-  summaryText: {
+  subtitle: {
     fontSize: 18,
-    marginVertical: 5,
+    color: '#666666',
+    marginBottom: 24,
   },
-  detailsContainer: {
-    marginTop: 20,
+  traitsContainer: {
+    gap: 16,
   },
-  detailsTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 15,
-  },
-  responseItem: {
+  traitRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    padding: 16,
+    backgroundColor: '#F5F5F5',
+    borderRadius: 8,
   },
-  scenarioId: {
-    fontSize: 16,
+  traitName: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#424242',
   },
-  response: {
-    fontSize: 16,
+  traitScore: {
+    fontSize: 20,
     fontWeight: 'bold',
-  },
-  yesResponse: {
-    color: '#4CAF50',
-  },
-  noResponse: {
-    color: '#F44336',
+    color: '#2196F3',
   },
 });
 

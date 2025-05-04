@@ -1,0 +1,452 @@
+[
+  {
+    "id": "scenario_001",
+    "subject": "Collateral or Consequences?",
+    "role": "You are a military commander overseeing a drone surveillance zone.",
+    "scenario": "Intel confirms a high-value target is meeting in a civilian area. The window to strike is short, but there's a risk of collateral damage.",
+    "question": "What would you do?",
+    "choices": [
+      "Authorize the strike immediately",
+      "Delay and monitor for a cleaner opportunity",
+      "Warn allies on the ground and risk losing the target",
+      "Cancel the mission and escalate for political approval"
+    ],
+    "activeTraits": [
+      "judgment",
+      "stability",
+      "trust",
+      "impact"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -3,
+        "trust": -1,
+        "impact": 2
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "trust": 0,
+        "impact": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "trust": 1,
+        "impact": 0
+      },
+      {
+        "judgment": 0,
+        "stability": 2,
+        "trust": 1,
+        "impact": -1
+      }
+    ]
+  },
+  {
+    "id": "scenario_002",
+    "subject": "Too Many Lives, One Operating Room",
+    "role": "You are the chief of surgery at a large urban hospital.",
+    "scenario": "Two critical patients arrive: a child in cardiac arrest, and an organ donor whose organs could save three others. Only one OR is available.",
+    "question": "What would you do?",
+    "choices": [
+      "Save the child first — stabilize others later",
+      "Harvest the organs to save more lives",
+      "Attempt to stabilize both until help arrives",
+      "Consult with an ethics board before acting"
+    ],
+    "activeTraits": [
+      "judgment",
+      "integrity",
+      "trust",
+      "impact"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "integrity": -2,
+        "trust": 1,
+        "impact": -1
+      },
+      {
+        "judgment": 1,
+        "integrity": 2,
+        "trust": -2,
+        "impact": 2
+      },
+      {
+        "judgment": 0,
+        "integrity": 0,
+        "trust": 0,
+        "impact": 1
+      },
+      {
+        "judgment": -1,
+        "integrity": 1,
+        "trust": 2,
+        "impact": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_003",
+    "subject": "The Policy Leak",
+    "role": "You are the communications director for a national political campaign.",
+    "scenario": "A confidential internal policy memo has been leaked and is drawing online criticism. Media requests are flooding in.",
+    "question": "What would you do?",
+    "choices": [
+      "Deny the memo and wait for the storm to pass",
+      "Confirm it, but downplay its relevance",
+      "Take responsibility and issue a formal response",
+      "Blame the leak on internal miscommunication"
+    ],
+    "activeTraits": [
+      "judgment",
+      "trust",
+      "publicApproval",
+      "stability"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "trust": -2,
+        "publicApproval": -2,
+        "stability": -1
+      },
+      {
+        "judgment": 1,
+        "trust": 0,
+        "publicApproval": 0,
+        "stability": 0
+      },
+      {
+        "judgment": 2,
+        "trust": 2,
+        "publicApproval": 1,
+        "stability": 1
+      },
+      {
+        "judgment": 0,
+        "trust": -1,
+        "publicApproval": -1,
+        "stability": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_004",
+    "subject": "Data or Dignity?",
+    "role": "You are the principal investigator of a major clinical trial.",
+    "scenario": "A participant has withdrawn consent, but their data could significantly impact your published results. There's no legal obligation to delete it.",
+    "question": "What would you do?",
+    "choices": [
+      "Respect their choice and delete the data",
+      "Keep the data but anonymize it further",
+      "Use the data, citing the initial consent",
+      "Pause the paper and consult with the ethics board"
+    ],
+    "activeTraits": [
+      "judgment",
+      "integrity",
+      "impact",
+      "alignment"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "integrity": 3,
+        "impact": -1,
+        "alignment": 1
+      },
+      {
+        "judgment": 1,
+        "integrity": 1,
+        "impact": 1,
+        "alignment": 0
+      },
+      {
+        "judgment": -1,
+        "integrity": -2,
+        "impact": 2,
+        "alignment": -2
+      },
+      {
+        "judgment": 0,
+        "integrity": 2,
+        "impact": 0,
+        "alignment": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_005",
+    "subject": "Trigger Warning or Truth?",
+    "role": "You are a philosophy professor designing a seminar on moral dilemmas.",
+    "scenario": "A student has asked that real-world tragedy examples be removed from course materials, calling them harmful and triggering.",
+    "question": "What would you do?",
+    "choices": [
+      "Remove the examples to prioritize student well-being",
+      "Retain the examples and offer a trigger warning",
+      "Replace with fictional cases to balance rigor and care",
+      "Host a class debate to address the issue collectively"
+    ],
+    "activeTraits": [
+      "judgment",
+      "trust",
+      "integrity",
+      "clarity"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "trust": 2,
+        "integrity": 1,
+        "clarity": -1
+      },
+      {
+        "judgment": 2,
+        "trust": 0,
+        "integrity": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "trust": 1,
+        "integrity": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "trust": 2,
+        "integrity": 0,
+        "clarity": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_006",
+    "subject": "Evacuation or Hold?",
+    "role": "You are the crisis coordinator for a coastal city during a typhoon alert.",
+    "scenario": "Models show the storm may weaken, but an early evacuation could cost millions and disrupt hospitals.",
+    "question": "What would you do?",
+    "choices": [
+      "Order a full evacuation immediately",
+      "Evacuate only high-risk zones",
+      "Wait for confirmation from national weather services",
+      "Hold a press conference and advise personal discretion"
+    ],
+    "activeTraits": [
+      "judgment",
+      "stability",
+      "impact",
+      "publicApproval"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": 2,
+        "impact": -1,
+        "publicApproval": -1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "impact": 0,
+        "publicApproval": 1
+      },
+      {
+        "judgment": 0,
+        "stability": -2,
+        "impact": 2,
+        "publicApproval": -1
+      },
+      {
+        "judgment": -1,
+        "stability": 0,
+        "impact": 0,
+        "publicApproval": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_007",
+    "subject": "Satellite or Science?",
+    "role": "You are the operations director at a space agency.",
+    "scenario": "A minor issue has been found in the satellite's calibration, but fixing it would delay launch and miss a rare alignment window.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch as scheduled and accept slight inaccuracy",
+      "Delay and recalibrate fully",
+      "Patch the software remotely post-launch",
+      "Split the team and try to fix while prepping launch"
+    ],
+    "activeTraits": [
+      "judgment",
+      "clarity",
+      "impact",
+      "agency"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "clarity": -1,
+        "impact": 2,
+        "agency": 1
+      },
+      {
+        "judgment": 2,
+        "clarity": 2,
+        "impact": -1,
+        "agency": -2
+      },
+      {
+        "judgment": 1,
+        "clarity": 0,
+        "impact": 1,
+        "agency": 1
+      },
+      {
+        "judgment": 0,
+        "clarity": 1,
+        "impact": 1,
+        "agency": -1
+      }
+    ]
+  },
+  {
+    "id": "scenario_008",
+    "subject": "Silence in the Code",
+    "role": "You are the CTO of a cybersecurity firm.",
+    "scenario": "An engineer has quietly patched a security flaw without logging or reporting it. The client is unaware.",
+    "question": "What would you do?",
+    "choices": [
+      "Report it to the client immediately",
+      "Speak privately to the engineer and document the event",
+      "Ignore it since the issue was fixed",
+      "Launch a formal internal audit of the team"
+    ],
+    "activeTraits": [
+      "judgment",
+      "trust",
+      "integrity",
+      "alignment"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "trust": 1,
+        "integrity": 2,
+        "alignment": 1
+      },
+      {
+        "judgment": 1,
+        "trust": 0,
+        "integrity": 1,
+        "alignment": 1
+      },
+      {
+        "judgment": -2,
+        "trust": -1,
+        "integrity": -2,
+        "alignment": -2
+      },
+      {
+        "judgment": 1,
+        "trust": -1,
+        "integrity": 2,
+        "alignment": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_009",
+    "subject": "The Curriculum Clash",
+    "role": "You are the head of curriculum at a national education board.",
+    "scenario": "Two provinces are pushing for conflicting history narratives to be taught. Approval is due in 48 hours.",
+    "question": "What would you do?",
+    "choices": [
+      "Choose one narrative and stand by the decision",
+      "Include both and frame them as contrasting perspectives",
+      "Delay the rollout until a consensus is reached",
+      "Refer the issue to an independent academic panel"
+    ],
+    "activeTraits": [
+      "judgment",
+      "trust",
+      "alignment",
+      "publicApproval"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "trust": -1,
+        "alignment": 2,
+        "publicApproval": -1
+      },
+      {
+        "judgment": 1,
+        "trust": 2,
+        "alignment": 1,
+        "publicApproval": 1
+      },
+      {
+        "judgment": 0,
+        "trust": 1,
+        "alignment": 0,
+        "publicApproval": 0
+      },
+      {
+        "judgment": 1,
+        "trust": 0,
+        "alignment": 1,
+        "publicApproval": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_010",
+    "subject": "Trial by Algorithm",
+    "role": "You are the lead AI ethicist at a tech firm releasing a risk prediction tool.",
+    "scenario": "The algorithm has shown a slight demographic bias in testing, but it's scheduled for public rollout in 24 hours.",
+    "question": "What would you do?",
+    "choices": [
+      "Halt the rollout immediately for retraining",
+      "Proceed and monitor for real-world bias",
+      "Release it with a public disclaimer",
+      "Limit the release to internal use only for now"
+    ],
+    "activeTraits": [
+      "judgment",
+      "integrity",
+      "impact",
+      "publicApproval"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "integrity": 3,
+        "impact": -1,
+        "publicApproval": 1
+      },
+      {
+        "judgment": -1,
+        "integrity": -2,
+        "impact": 2,
+        "publicApproval": -2
+      },
+      {
+        "judgment": 0,
+        "integrity": -1,
+        "impact": 1,
+        "publicApproval": 1
+      },
+      {
+        "judgment": 1,
+        "integrity": 1,
+        "impact": 0,
+        "publicApproval": 0
+      }
+    ]
+  }
+]

@@ -61,28 +61,36 @@ const ResultsScreen: React.FC<Props> = ({route}) => {
         </View>
 
         {/* Caution Tags */}
-        {analysis.cautionTags.length > 0 && (
-          <View style={styles.tagsSection}>
-            <Text style={styles.sectionTitle}>Areas for Improvement</Text>
-            {analysis.cautionTags.map((tag, index) => (
+        <View style={styles.tagsSection}>
+          <Text style={styles.sectionTitle}>Areas for Improvement</Text>
+          {analysis.cautionTags.length > 0 ? (
+            analysis.cautionTags.map((tag, index) => (
               <View key={index} style={styles.tagContainer}>
                 <Text style={styles.tagText}>⚠️ {tag}</Text>
               </View>
-            ))}
-          </View>
-        )}
+            ))
+          ) : (
+            <View style={[styles.tagContainer, styles.positiveTag]}>
+              <Text style={styles.tagText}>✅ No significant areas for improvement found</Text>
+            </View>
+          )}
+        </View>
 
         {/* Major Flaw Tags */}
-        {analysis.flawTags.length > 0 && (
-          <View style={styles.tagsSection}>
-            <Text style={styles.sectionTitle}>Critical Concerns</Text>
-            {analysis.flawTags.map((tag, index) => (
+        <View style={styles.tagsSection}>
+          <Text style={styles.sectionTitle}>Critical Concerns</Text>
+          {analysis.flawTags.length > 0 ? (
+            analysis.flawTags.map((tag, index) => (
               <View key={index} style={[styles.tagContainer, styles.flawTag]}>
                 <Text style={styles.tagText}>🚨 {tag}</Text>
               </View>
-            ))}
-          </View>
-        )}
+            ))
+          ) : (
+            <View style={[styles.tagContainer, styles.positiveTag]}>
+              <Text style={styles.tagText}>✅ No critical concerns identified</Text>
+            </View>
+          )}
+        </View>
 
         {/* Trait Scores */}
         <View style={styles.scoresSection}>
@@ -192,6 +200,9 @@ const styles = StyleSheet.create({
   },
   negativeScore: {
     color: '#F44336',
+  },
+  positiveTag: {
+    backgroundColor: '#1b3a1b', // Dark green background
   },
 });
 

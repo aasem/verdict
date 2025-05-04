@@ -18,7 +18,7 @@ type Props = NativeStackNavigationProp<RootStackParamList, 'Onboarding'>;
 const OnboardingScreen: React.FC = () => {
   const navigation = useNavigation<Props>();
   const {gameState, selectChoice, getScores} = useGame();
-  const [timeLeft, setTimeLeft] = useState(90);
+  const [timeLeft, setTimeLeft] = useState(180);
   const [shouldNavigate, setShouldNavigate] = useState(false);
 
   // Timer effect

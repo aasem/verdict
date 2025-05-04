@@ -13,48 +13,48 @@
     ],
     "effects": [
       {
-        "judgment": 2,
-        "stability": -3,
+        "judgment": 1,
+        "stability": -2,
         "agency": 2,
-        "trust": -1,
+        "trust": -2,
         "impact": 2,
         "integrity": -2,
         "publicApproval": -2,
-        "alignment": -1,
-        "clarity": 1
-      },
-      {
-        "judgment": 1,
-        "stability": 0,
-        "agency": 1,
-        "trust": 0,
-        "impact": 1,
-        "integrity": 0,
-        "publicApproval": 0,
-        "alignment": 0,
-        "clarity": 1
+        "alignment": -2,
+        "clarity": 0
       },
       {
         "judgment": 1,
         "stability": 1,
-        "agency": 0,
+        "agency": 1,
         "trust": 1,
         "impact": 0,
         "integrity": 1,
-        "publicApproval": 0,
+        "publicApproval": 1,
         "alignment": 1,
-        "clarity": 0
+        "clarity": 1
       },
       {
         "judgment": 0,
         "stability": 2,
-        "agency": -2,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 1,
+        "agency": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
         "alignment": 2,
-        "clarity": -1
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 2,
+        "agency": -1,
+        "trust": 2,
+        "impact": 0,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 1
       }
     ]
   },
@@ -72,48 +72,48 @@
     ],
     "effects": [
       {
-        "judgment": 2,
+        "judgment": 1,
         "stability": -1,
         "agency": 2,
-        "trust": 1,
+        "trust": 2,
         "impact": -1,
-        "integrity": -2,
-        "publicApproval": -1,
-        "alignment": -1,
-        "clarity": 1
+        "integrity": 1,
+        "publicApproval": 2,
+        "alignment": 1,
+        "clarity": 0
       },
       {
         "judgment": 1,
         "stability": 0,
         "agency": 1,
-        "trust": -2,
+        "trust": -1,
         "impact": 2,
-        "integrity": 2,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 0
-      },
-      {
-        "judgment": 0,
-        "stability": 1,
-        "agency": 0,
-        "trust": 0,
-        "impact": 1,
-        "integrity": 0,
+        "integrity": 1,
         "publicApproval": 0,
-        "alignment": 0,
+        "alignment": 1,
         "clarity": 1
       },
       {
-        "judgment": -1,
+        "judgment": 1,
         "stability": 2,
-        "agency": -2,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 2,
+        "agency": -1,
         "trust": 2,
         "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
+        "integrity": 2,
+        "publicApproval": 2,
         "alignment": 2,
-        "clarity": -1
+        "clarity": 1
       }
     ]
   },
@@ -190,46 +190,46 @@
     ],
     "effects": [
       {
-        "judgment": 2,
-        "stability": -1,
+        "judgment": 1,
+        "stability": 0,
         "agency": 1,
         "trust": 2,
-        "impact": -1,
-        "integrity": 3,
+        "impact": -2,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 2
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 1,
         "publicApproval": 1,
         "alignment": 1,
         "clarity": 1
       },
       {
-        "judgment": 1,
-        "stability": 0,
-        "agency": 0,
-        "trust": 1,
-        "impact": 1,
-        "integrity": 1,
-        "publicApproval": 0,
-        "alignment": 0,
-        "clarity": 0
-      },
-      {
-        "judgment": -1,
-        "stability": 1,
-        "agency": -2,
+        "judgment": 0,
+        "stability": -1,
+        "agency": -1,
         "trust": -2,
         "impact": 2,
         "integrity": -2,
-        "publicApproval": -1,
+        "publicApproval": -2,
         "alignment": -2,
         "clarity": -1
       },
       {
-        "judgment": 0,
+        "judgment": 2,
         "stability": 1,
-        "agency": -1,
-        "trust": 1,
+        "agency": 0,
+        "trust": 2,
         "impact": 0,
         "integrity": 2,
-        "publicApproval": 0,
+        "publicApproval": 1,
         "alignment": 2,
         "clarity": 1
       }
@@ -308,48 +308,48 @@
     ],
     "effects": [
       {
-        "judgment": 2,
-        "stability": 2,
-        "agency": 2,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": -1,
-        "alignment": -1,
-        "clarity": 1
+        "judgment": 1,        
+        "stability": 2,       
+        "agency": 2,          
+        "trust": 2,           
+        "impact": -2,         
+        "integrity": 2,       
+        "publicApproval": 0,  
+        "alignment": 1,       
+        "clarity": 2          
       },
       {
-        "judgment": 1,
-        "stability": 1,
-        "agency": 1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
+        "judgment": 2,         
+        "stability": 1,        
+        "agency": 1,         
+        "trust": 2,          
+        "impact": 1,         
+        "integrity": 2,       
+        "publicApproval": 2,  
+        "alignment": 2,       
+        "clarity": 2          
       },
       {
-        "judgment": 0,
-        "stability": -2,
-        "agency": -2,
-        "trust": 0,
-        "impact": 2,
-        "integrity": 0,
-        "publicApproval": -1,
-        "alignment": 0,
-        "clarity": -1
+        "judgment": 1,         
+        "stability": -1,       
+        "agency": -1,         
+        "trust": -1,          
+        "impact": 1,          
+        "integrity": 0,       
+        "publicApproval": -1, 
+        "alignment": 0,       
+        "clarity": 0          
       },
       {
-        "judgment": -1,
-        "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 2,
-        "alignment": 1,
-        "clarity": 0
+        "judgment": 0,         
+        "stability": 0,        
+        "agency": -1,         
+        "trust": 1,           
+        "impact": 0,          
+        "integrity": 1,       
+        "publicApproval": 2,  
+        "alignment": 1,       
+        "clarity": 1          
       }
     ]
   },
@@ -544,48 +544,48 @@
     ],
     "effects": [
       {
-        "judgment": 2,
-        "stability": -1,
-        "agency": 2,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 3,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
+        "judgment": 2,         
+        "stability": -1,       
+        "agency": 2,          
+        "trust": 2,           
+        "impact": -1,         
+        "integrity": 2,       
+        "publicApproval": 2,  
+        "alignment": 2,       
+        "clarity": 2          
       },
       {
-        "judgment": -1,
-        "stability": 1,
-        "agency": -2,
-        "trust": -1,
-        "impact": 2,
-        "integrity": -2,
-        "publicApproval": -2,
-        "alignment": -1,
-        "clarity": -1
+        "judgment": -1,        
+        "stability": 0,        
+        "agency": -1,         
+        "trust": -2,          
+        "impact": 1,          
+        "integrity": -2,      
+        "publicApproval": -2, 
+        "alignment": -2,      
+        "clarity": -1         
       },
       {
-        "judgment": 0,
-        "stability": 0,
-        "agency": 0,
-        "trust": 0,
-        "impact": 1,
-        "integrity": -1,
-        "publicApproval": 1,
-        "alignment": 0,
-        "clarity": 1
+        "judgment": 1,         
+        "stability": 1,        
+        "agency": 1,          
+        "trust": 0,           
+        "impact": 1,          
+        "integrity": 0,       
+        "publicApproval": 1,  
+        "alignment": 1,       
+        "clarity": 2          
       },
       {
-        "judgment": 1,
-        "stability": 1,
-        "agency": -1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 0,
-        "alignment": 1,
-        "clarity": 1
+        "judgment": 2,         
+        "stability": 2,        
+        "agency": 0,          
+        "trust": 2,           
+        "impact": 0,          
+        "integrity": 2,       
+        "publicApproval": 1,  
+        "alignment": 2,       
+        "clarity": 1          
       }
     ]
   },
@@ -662,47 +662,47 @@
     ],
     "effects": [
       {
-        "judgment": 2,
+        "judgment": 0,
         "stability": -1,
         "agency": 2,
         "trust": -1,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 2,
+        "agency": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 2
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
         "impact": 2,
         "integrity": 1,
-        "publicApproval": -2,
-        "alignment": -2,
+        "publicApproval": 1,
+        "alignment": 1,
         "clarity": 1
       },
       {
         "judgment": 1,
         "stability": 1,
-        "agency": 1,
-        "trust": 1,
-        "impact": 1,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 2
-      },
-      {
-        "judgment": -1,
-        "stability": 0,
-        "agency": -1,
-        "trust": -1,
-        "impact": -1,
-        "integrity": -1,
-        "publicApproval": 0,
-        "alignment": 0,
-        "clarity": 0
-      },
-      {
-        "judgment": 1,
-        "stability": 1,
         "agency": 0,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
         "clarity": 1
       }
     ]
@@ -1134,33 +1134,33 @@
     ],
     "effects": [
       {
-        "judgment": 1,
+        "judgment": 0,
         "stability": -1,
         "agency": 2,
         "trust": -1,
         "impact": 1,
-        "integrity": 1,
+        "integrity": 0,
         "publicApproval": -1,
         "alignment": -1,
         "clarity": 1
       },
       {
         "judgment": 1,
-        "stability": 1,
+        "stability": 2,
         "agency": 1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 2
       },
       {
         "judgment": 2,
         "stability": 1,
-        "agency": 0,
+        "agency": 1,
         "trust": 1,
-        "impact": 1,
+        "impact": 2,
         "integrity": 1,
         "publicApproval": 1,
         "alignment": 1,
@@ -1168,14 +1168,14 @@
       },
       {
         "judgment": 1,
-        "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 2
+        "stability": 1,
+        "agency": 0,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 1
       }
     ]
   },
@@ -1193,47 +1193,47 @@
     ],
     "effects": [
       {
-        "judgment": 1,
+        "judgment": 0,
         "stability": -2,
         "agency": 2,
-        "trust": -2,
-        "impact": 2,
-        "integrity": 1,
-        "publicApproval": -2,
-        "alignment": -2,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 2,
+        "publicApproval": -1,
+        "alignment": -1,
         "clarity": 1
       },
       {
         "judgment": 2,
-        "stability": 1,
+        "stability": 2,
         "agency": 1,
         "trust": 2,
-        "impact": 1,
+        "impact": 2,
         "integrity": 2,
-        "publicApproval": 1,
+        "publicApproval": 2,
         "alignment": 2,
-        "clarity": 1
-      },
-      {
-        "judgment": 0,
-        "stability": 1,
-        "agency": 0,
-        "trust": 0,
-        "impact": -1,
-        "integrity": 0,
-        "publicApproval": 0,
-        "alignment": 0,
-        "clarity": 0
+        "clarity": 2
       },
       {
         "judgment": 1,
-        "stability": 0,
-        "agency": -1,
+        "stability": 1,
+        "agency": 1,
         "trust": 1,
-        "impact": 0,
+        "impact": 1,
         "integrity": 1,
         "publicApproval": 1,
         "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
         "clarity": 1
       }
     ]
@@ -1489,22 +1489,22 @@
     "effects": [
       {
         "judgment": 1,
-        "stability": -2,
-        "agency": 2,
-        "trust": -2,
-        "impact": 2,
-        "integrity": -1,
-        "publicApproval": 1,
-        "alignment": -2,
-        "clarity": 0
-      },
-      {
-        "judgment": 2,
-        "stability": 1,
+        "stability": -1,
         "agency": 1,
-        "trust": 1,
+        "trust": -1,
         "impact": 1,
         "integrity": 0,
+        "publicApproval": -1,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
         "publicApproval": 1,
         "alignment": 1,
         "clarity": 1
@@ -1512,9 +1512,9 @@
       {
         "judgment": 0,
         "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": 0,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
         "integrity": 1,
         "publicApproval": 0,
         "alignment": 1,
@@ -1523,12 +1523,12 @@
       {
         "judgment": 1,
         "stability": 1,
-        "agency": 0,
+        "agency": -1,
         "trust": 1,
         "impact": -1,
         "integrity": 1,
-        "publicApproval": 0,
-        "alignment": 1,
+        "publicApproval": 1,
+        "alignment": 0,
         "clarity": 1
       }
     ]
@@ -1667,34 +1667,12 @@
       {
         "judgment": 0,
         "stability": -1,
-        "agency": 2,
+        "agency": 1,
         "trust": -1,
         "impact": 1,
         "integrity": -1,
-        "publicApproval": 0,
+        "publicApproval": -1,
         "alignment": -1,
-        "clarity": 1
-      },
-      {
-        "judgment": 2,
-        "stability": 1,
-        "agency": 1,
-        "trust": 1,
-        "impact": 0,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
-      },
-      {
-        "judgment": 1,
-        "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 0,
-        "alignment": 1,
         "clarity": 0
       },
       {
@@ -1707,6 +1685,28 @@
         "publicApproval": 1,
         "alignment": 1,
         "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
       }
     ]
   },
@@ -1783,18 +1783,40 @@
     ],
     "effects": [
       {
-        "judgment": 1,
-        "stability": 1,
-        "agency": -2,
-        "trust": 1,
+        "judgment": -1,
+        "stability": 0,
+        "agency": 2,
+        "trust": -2,
         "impact": 2,
-        "integrity": 0,
-        "publicApproval": -1,
-        "alignment": -1,
-        "clarity": 1
+        "integrity": -2,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
       },
       {
         "judgment": 2,
+        "stability": 2,
+        "agency": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 2,
+        "alignment": 2,
+        "clarity": 2
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 2,
+        "impact": 0,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 2,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
         "stability": 1,
         "agency": 1,
         "trust": 1,
@@ -1802,28 +1824,6 @@
         "integrity": 1,
         "publicApproval": 1,
         "alignment": 1,
-        "clarity": 1
-      },
-      {
-        "judgment": 0,
-        "stability": -1,
-        "agency": 2,
-        "trust": -1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": -1,
-        "clarity": 0
-      },
-      {
-        "judgment": -1,
-        "stability": -2,
-        "agency": 0,
-        "trust": -1,
-        "impact": -1,
-        "integrity": 0,
-        "publicApproval": 0,
-        "alignment": -2,
         "clarity": 1
       }
     ]
@@ -2492,35 +2492,35 @@
     "effects": [
       {
         "judgment": 1,
-        "stability": -2,
-        "agency": 2,
-        "trust": -2,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 0,
-        "alignment": -2,
-        "clarity": 0
+        "stability": -1,
+        "agency": 1,
+        "trust": -1,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": -1,
+        "alignment": 0,
+        "clarity": 1
       },
       {
-        "judgment": 2,
-        "stability": 0,
-        "agency": 1,
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
         "trust": 1,
         "impact": 0,
         "integrity": 1,
-        "publicApproval": 0,
+        "publicApproval": 1,
         "alignment": 1,
         "clarity": 1
       },
       {
         "judgment": 0,
-        "stability": 1,
-        "agency": 0,
+        "stability": 0,
+        "agency": 1,
         "trust": 0,
-        "impact": 0,
-        "integrity": 0,
+        "impact": 1,
+        "integrity": 1,
         "publicApproval": 0,
-        "alignment": 0,
+        "alignment": 1,
         "clarity": 0
       },
       {
@@ -2530,8 +2530,8 @@
         "trust": 1,
         "impact": -1,
         "integrity": 1,
-        "publicApproval": 0,
-        "alignment": 1,
+        "publicApproval": 1,
+        "alignment": 0,
         "clarity": 1
       }
     ]
@@ -2550,41 +2550,41 @@
     ],
     "effects": [
       {
-        "judgment": 0,
-        "stability": 1,
-        "agency": 2,
-        "trust": -1,
-        "impact": 1,
-        "integrity": -1,
-        "publicApproval": -1,
-        "alignment": -1,
-        "clarity": 1
-      },
-      {
-        "judgment": 2,
+        "judgment": 1,
         "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": -1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
         "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
+        "publicApproval": 0,
+        "alignment": 0,
         "clarity": 1
       },
       {
         "judgment": 1,
+        "stability": -1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 0,
         "stability": 1,
         "agency": 0,
         "trust": 1,
         "impact": 0,
         "integrity": 1,
         "publicApproval": 1,
-        "alignment": 1,
+        "alignment": 0,
         "clarity": 1
       },
       {
         "judgment": 1,
-        "stability": 0,
+        "stability": 1,
         "agency": -1,
         "trust": 1,
         "impact": -1,
@@ -2668,37 +2668,15 @@
     ],
     "effects": [
       {
-        "judgment": -1,
-        "stability": -2,
-        "agency": 2,
+        "judgment": 0,
+        "stability": -1,
+        "agency": 1,
         "trust": -1,
         "impact": 1,
         "integrity": -1,
         "publicApproval": -1,
-        "alignment": -2,
+        "alignment": -1,
         "clarity": 0
-      },
-      {
-        "judgment": 1,
-        "stability": 0,
-        "agency": 1,
-        "trust": 0,
-        "impact": 0,
-        "integrity": 0,
-        "publicApproval": 0,
-        "alignment": 0,
-        "clarity": 0
-      },
-      {
-        "judgment": 2,
-        "stability": 1,
-        "agency": -1,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
       },
       {
         "judgment": 1,
@@ -2710,6 +2688,28 @@
         "publicApproval": 1,
         "alignment": 1,
         "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
       }
     ]
   },
@@ -2727,20 +2727,20 @@
     ],
     "effects": [
       {
-        "judgment": -1,
-        "stability": -2,
-        "agency": 2,
+        "judgment": 0,
+        "stability": -1,
+        "agency": 1,
         "trust": -1,
         "impact": 1,
         "integrity": -1,
-        "publicApproval": -2,
-        "alignment": -2,
+        "publicApproval": -1,
+        "alignment": -1,
         "clarity": 0
       },
       {
-        "judgment": 2,
+        "judgment": 1,
         "stability": 1,
-        "agency": 1,
+        "agency": 0,
         "trust": 1,
         "impact": 0,
         "integrity": 1,
@@ -2751,23 +2751,23 @@
       {
         "judgment": 1,
         "stability": 0,
-        "agency": -1,
+        "agency": 0,
         "trust": 1,
-        "impact": -1,
+        "impact": 0,
         "integrity": 1,
         "publicApproval": 1,
-        "alignment": 1,
+        "alignment": 0,
         "clarity": 1
       },
       {
-        "judgment": 1,
+        "judgment": 0,
         "stability": 1,
-        "agency": 0,
+        "agency": 1,
         "trust": 0,
-        "impact": 0,
+        "impact": 1,
         "integrity": 0,
         "publicApproval": 0,
-        "alignment": 0,
+        "alignment": 1,
         "clarity": 0
       }
     ]
@@ -2906,18 +2906,18 @@
       {
         "judgment": 0,
         "stability": -1,
-        "agency": 2,
+        "agency": 1,
         "trust": -1,
         "impact": 1,
         "integrity": -1,
-        "publicApproval": 0,
+        "publicApproval": -1,
         "alignment": -1,
         "clarity": 0
       },
       {
-        "judgment": 2,
+        "judgment": 1,
         "stability": 1,
-        "agency": 1,
+        "agency": 0,
         "trust": 1,
         "impact": 0,
         "integrity": 1,
@@ -2928,24 +2928,24 @@
       {
         "judgment": 1,
         "stability": 0,
-        "agency": -1,
-        "trust": 1,
-        "impact": -1,
-        "integrity": 1,
-        "publicApproval": 1,
-        "alignment": 1,
-        "clarity": 1
-      },
-      {
-        "judgment": 1,
-        "stability": 1,
         "agency": 0,
         "trust": 1,
-        "impact": 1,
-        "integrity": 0,
+        "impact": 0,
+        "integrity": 1,
         "publicApproval": 0,
         "alignment": 1,
         "clarity": 0
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 0,
+        "clarity": 1
       }
     ]
   }

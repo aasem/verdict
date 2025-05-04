@@ -588,5 +588,2365 @@
         "clarity": 1
       }
     ]
+  },
+  {
+    "id": "scenario_011",
+    "subject": "The Whistleblower's Dilemma",
+    "role": "You are a senior compliance officer at a pharmaceutical company.",
+    "scenario": "A junior researcher has evidence of manipulated clinical trial data, but reporting it could cost thousands of jobs and delay life-saving treatments.",
+    "question": "What would you do?",
+    "choices": [
+      "Report immediately to regulatory authorities",
+      "Launch an internal investigation first",
+      "Work with the researcher to find a compromise",
+      "Document everything but wait for more evidence"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -2,
+        "agency": 2,
+        "trust": 2,
+        "impact": -2,
+        "integrity": 3,
+        "publicApproval": 1,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": -1,
+        "stability": 1,
+        "agency": -1,
+        "trust": -1,
+        "impact": 0,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": 1,
+        "clarity": -1
+      }
+    ]
+  },
+  {
+    "id": "scenario_012",
+    "subject": "The Social Media Storm",
+    "role": "You are the CEO of a major tech platform.",
+    "scenario": "A viral post is spreading misinformation about a public health crisis. Removing it would trigger accusations of censorship, but leaving it up could cause real harm.",
+    "question": "What would you do?",
+    "choices": [
+      "Remove the post immediately",
+      "Add fact-checking labels and context",
+      "Let the community self-moderate",
+      "Consult with public health experts first"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      },
+      {
+        "judgment": -1,
+        "stability": 0,
+        "agency": -1,
+        "trust": -1,
+        "impact": -1,
+        "integrity": -1,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_013",
+    "subject": "The Climate Compromise",
+    "role": "You are the chief negotiator for a developing nation at a climate summit.",
+    "scenario": "Your country needs economic growth, but accepting strict emissions limits could slow development. The global community is pressuring for immediate action.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept the strict limits for global good",
+      "Propose a gradual transition plan",
+      "Request financial aid to offset costs",
+      "Stand firm on current development needs"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": -1,
+        "trust": 2,
+        "impact": -2,
+        "integrity": 2,
+        "publicApproval": -1,
+        "alignment": 2,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 1,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": 2,
+        "alignment": -2,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_014",
+    "subject": "The AI Artist's Rights",
+    "role": "You are the director of a major art museum.",
+    "scenario": "An AI-generated artwork has won a prestigious competition, but artists are protesting that it undermines human creativity and should be disqualified.",
+    "question": "What would you do?",
+    "choices": [
+      "Disqualify the AI entry",
+      "Create a new category for AI art",
+      "Let the original decision stand",
+      "Form a committee to review the rules"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      },
+      {
+        "judgment": 0,
+        "stability": -1,
+        "agency": -1,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_015",
+    "subject": "The Resource Race",
+    "role": "You are the head of a humanitarian aid organization.",
+    "scenario": "Two regions are facing severe crises: one has an ongoing conflict, the other a natural disaster. Your resources can only fully address one situation.",
+    "question": "What would you do?",
+    "choices": [
+      "Focus on the conflict zone",
+      "Prioritize the natural disaster",
+      "Split resources between both",
+      "Assess which situation is more time-critical"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 2,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 2,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 0,
+        "agency": -1,
+        "trust": 0,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_016",
+    "subject": "The Ancient Discovery",
+    "role": "You are the lead archaeologist at a major excavation site.",
+    "scenario": "Your team has discovered a sacred burial ground. Local indigenous groups want it preserved, but the site contains artifacts that could revolutionize our understanding of ancient history.",
+    "question": "What would you do?",
+    "choices": [
+      "Proceed with full excavation",
+      "Work with indigenous groups to develop a compromise",
+      "Document the surface and rebury the site",
+      "Seek international cultural heritage guidance"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -2,
+        "publicApproval": -1,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 2,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 2,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_017",
+    "subject": "The Algorithm's Bias",
+    "role": "You are the head of AI ethics at a financial institution.",
+    "scenario": "Your loan approval algorithm shows a slight bias against certain demographics. Fixing it would require months of retraining and delay a major product launch.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch as planned and monitor for issues",
+      "Delay launch and fix the bias",
+      "Launch with manual override options",
+      "Create a separate review process for affected groups"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": 1,
+        "agency": -2,
+        "trust": -2,
+        "impact": -1,
+        "integrity": -2,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": 2,
+        "trust": 2,
+        "impact": -2,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": -1
+      }
+    ]
+  },
+  {
+    "id": "scenario_018",
+    "subject": "The Water Crisis",
+    "role": "You are the mayor of a city facing severe water shortages.",
+    "scenario": "Your city's water supply is critically low. You must choose between implementing strict rationing or investing in an expensive desalination plant that would take years to build.",
+    "question": "What would you do?",
+    "choices": [
+      "Implement immediate strict rationing",
+      "Start building the desalination plant",
+      "Combine moderate rationing with conservation incentives",
+      "Seek emergency water imports from neighboring regions"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": -2,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_019",
+    "subject": "The Privacy Paradox",
+    "role": "You are the chief privacy officer at a healthcare technology company.",
+    "scenario": "Your new health monitoring app could save lives by detecting early warning signs, but it requires extensive personal data collection that some users find invasive.",
+    "question": "What would you do?",
+    "choices": [
+      "Require full data collection for all features",
+      "Offer tiered privacy options with limited features",
+      "Make all features optional with clear opt-in choices",
+      "Delay launch until privacy concerns are fully addressed"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -1,
+        "publicApproval": -2,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": -1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_020",
+    "subject": "The Cultural Divide",
+    "role": "You are the principal of an international school.",
+    "scenario": "A student's parents object to certain curriculum content based on their cultural beliefs, but the material is essential for the course's learning objectives.",
+    "question": "What would you do?",
+    "choices": [
+      "Maintain the curriculum as is",
+      "Offer alternative assignments for the student",
+      "Modify the curriculum to be more inclusive",
+      "Host a community discussion about the content"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 2
+      }
+    ]
+  },
+  {
+    "id": "scenario_021",
+    "subject": "The Endangered Species",
+    "role": "You are the director of a wildlife conservation park.",
+    "scenario": "A critically endangered species' habitat is being threatened by local farmers who need the land to survive. The species could go extinct within months.",
+    "question": "What would you do?",
+    "choices": [
+      "Enforce strict protection of the habitat",
+      "Work with farmers to create sustainable alternatives",
+      "Relocate the species to a protected area",
+      "Seek international conservation funding to compensate farmers"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 2,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 2,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_022",
+    "subject": "The Research Dilemma",
+    "role": "You are the lead researcher of a breakthrough medical study.",
+    "scenario": "Your team has discovered a potential cure for a rare disease, but the research involves controversial methods that some consider unethical.",
+    "question": "What would you do?",
+    "choices": [
+      "Publish the findings immediately",
+      "Seek ethical review board approval first",
+      "Modify the research to use alternative methods",
+      "Share preliminary results with the medical community"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -1,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -2,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_023",
+    "subject": "The Urban Development",
+    "role": "You are the city planner in charge of a major urban renewal project.",
+    "scenario": "A historic neighborhood needs revitalization, but the proposed development would displace long-term residents and change the area's character.",
+    "question": "What would you do?",
+    "choices": [
+      "Proceed with the full development plan",
+      "Create a mixed-use plan preserving some historic buildings",
+      "Focus on infrastructure improvements without major changes",
+      "Develop a new plan with community input"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -1,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_024",
+    "subject": "The Diplomatic Crisis",
+    "role": "You are the ambassador to a country facing political turmoil.",
+    "scenario": "Your host country is violating human rights, but speaking out could jeopardize crucial trade agreements and diplomatic relations.",
+    "question": "What would you do?",
+    "choices": [
+      "Publicly condemn the violations",
+      "Address concerns through private channels",
+      "Use economic leverage to pressure change",
+      "Focus on maintaining diplomatic relations"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": -1,
+        "trust": -1,
+        "impact": -1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_025",
+    "subject": "The Corporate Merger",
+    "role": "You are the CEO of a family-owned company being acquired by a larger corporation.",
+    "scenario": "The merger would secure the company's future but require significant layoffs and changes to company culture. Your family's legacy is at stake.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept the merger as proposed",
+      "Negotiate for employee protection clauses",
+      "Seek alternative investors to remain independent",
+      "Propose a gradual integration plan"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": -2,
+        "trust": -2,
+        "impact": -1,
+        "integrity": -1,
+        "publicApproval": -2,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": -1,
+        "agency": 2,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_026",
+    "subject": "The Intelligence Leak",
+    "role": "You are the director of national intelligence.",
+    "scenario": "A foreign ally has shared sensitive intelligence about an imminent threat, but acting on it would reveal your intelligence capabilities and potentially compromise sources.",
+    "question": "What would you do?",
+    "choices": [
+      "Act immediately on the intelligence",
+      "Develop a cover story for the operation",
+      "Share the intelligence with other allies first",
+      "Gather additional verification before acting"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -1,
+        "publicApproval": 1,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_027",
+    "subject": "The Peacekeeping Mission",
+    "role": "You are the commander of a UN peacekeeping force.",
+    "scenario": "Your mission is to protect civilians, but local factions are using them as human shields. Any action could result in civilian casualties.",
+    "question": "What would you do?",
+    "choices": [
+      "Engage the combatants despite civilian presence",
+      "Withdraw and call for diplomatic intervention",
+      "Attempt to negotiate safe passage for civilians",
+      "Request additional forces and maintain position"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": -2,
+        "integrity": -2,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_028",
+    "subject": "The Arms Deal",
+    "role": "You are the foreign minister of a major power.",
+    "scenario": "A strategic ally requests advanced military technology, but there are concerns it could be used against civilian populations or fall into enemy hands.",
+    "question": "What would you do?",
+    "choices": [
+      "Approve the sale with strict conditions",
+      "Deny the request entirely",
+      "Offer alternative, less-lethal technology",
+      "Delay decision and seek international consensus"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 0,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": -1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": 2,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 0,
+        "agency": -1,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_029",
+    "subject": "The Cyber Attack",
+    "role": "You are the head of national cybersecurity.",
+    "scenario": "A foreign state has launched a cyber attack on your country's infrastructure. Intelligence suggests they're testing your response capabilities.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch a counter-cyber attack",
+      "Strengthen defenses and issue a warning",
+      "Seek diplomatic resolution",
+      "Expose the attack publicly and seek international support"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": -1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": 0,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_030",
+    "subject": "The Refugee Crisis",
+    "role": "You are the head of an international aid organization.",
+    "scenario": "A neighboring country is experiencing a humanitarian crisis, but accepting refugees could strain your resources and create political tension.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept all refugees immediately",
+      "Implement a controlled admission process",
+      "Focus on providing aid in the source country",
+      "Coordinate with other nations for shared responsibility"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_031",
+    "subject": "The Nuclear Negotiation",
+    "role": "You are the chief negotiator for a nuclear disarmament treaty.",
+    "scenario": "A nuclear-armed state is willing to reduce its arsenal, but demands significant economic concessions and security guarantees in return.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept their terms to secure disarmament",
+      "Propose a phased reduction with gradual concessions",
+      "Insist on immediate, unconditional disarmament",
+      "Seek international pressure through sanctions"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -2,
+        "trust": 1,
+        "impact": 2,
+        "integrity": 0,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": -1,
+        "agency": 2,
+        "trust": -1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 0,
+        "trust": -1,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": -2,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_032",
+    "subject": "The Climate Emergency",
+    "role": "You are the environmental minister of a major industrial nation.",
+    "scenario": "Your country faces a choice between meeting immediate economic needs through fossil fuels or implementing strict environmental regulations that could cause short-term economic hardship.",
+    "question": "What would you do?",
+    "choices": [
+      "Implement strict environmental regulations immediately",
+      "Create a gradual transition plan with economic support",
+      "Focus on economic recovery first, then environmental goals",
+      "Seek international funding for green transition"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": 2,
+        "integrity": 2,
+        "publicApproval": -2,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": -1,
+        "impact": -1,
+        "integrity": -1,
+        "publicApproval": 1,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_033",
+    "subject": "The Political Scandal",
+    "role": "You are the campaign manager for a leading presidential candidate.",
+    "scenario": "A damaging story about your candidate's past is about to break. You have evidence that could discredit the source, but using it would be ethically questionable.",
+    "question": "What would you do?",
+    "choices": [
+      "Release the damaging information about the source",
+      "Address the story directly and honestly",
+      "Attempt to negotiate with the media outlet",
+      "Focus on positive campaign messaging instead"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": 1,
+        "agency": 2,
+        "trust": -2,
+        "impact": 1,
+        "integrity": -2,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": -1,
+        "agency": 0,
+        "trust": 0,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_034",
+    "subject": "The Ocean Crisis",
+    "role": "You are the director of international marine conservation.",
+    "scenario": "A major shipping route is causing severe damage to marine ecosystems, but regulating it would impact global trade and developing economies.",
+    "question": "What would you do?",
+    "choices": [
+      "Implement strict shipping regulations immediately",
+      "Create a phased plan with economic compensation",
+      "Focus on alternative route development",
+      "Seek voluntary compliance from shipping companies"
+    ],
+    "effects": [
+      {
+        "judgment": 2,
+        "stability": -2,
+        "agency": 2,
+        "trust": -1,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": -2,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": -1,
+        "trust": 0,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_035",
+    "subject": "The Economic Sanctions",
+    "role": "You are the economic advisor to a world power's president.",
+    "scenario": "A country has violated international law, but imposing sanctions would hurt your nation's businesses and potentially cause humanitarian issues.",
+    "question": "What would you do?",
+    "choices": [
+      "Implement comprehensive sanctions",
+      "Target sanctions to specific sectors only",
+      "Seek diplomatic resolution first",
+      "Propose international economic incentives instead"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -1,
+        "agency": 2,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_036",
+    "subject": "The Campaign Finance",
+    "role": "You are a senior political strategist.",
+    "scenario": "Your campaign is offered a large donation from a controversial industry. Accepting it would secure victory, but could compromise your policy positions.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept the donation and maintain policy flexibility",
+      "Decline the donation and seek alternative funding",
+      "Accept with strict policy conditions",
+      "Publicly disclose and let voters decide"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": 1,
+        "agency": 2,
+        "trust": -2,
+        "impact": 1,
+        "integrity": -2,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": -1,
+        "trust": 2,
+        "impact": -1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_037",
+    "subject": "The Renewable Revolution",
+    "role": "You are the energy minister of a developing nation.",
+    "scenario": "Your country needs to transition to renewable energy, but the immediate costs would be high and could slow economic development.",
+    "question": "What would you do?",
+    "choices": [
+      "Implement full transition immediately",
+      "Create a 20-year transition plan",
+      "Focus on economic growth first",
+      "Seek international green energy funding"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": -2,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": -1,
+        "impact": -1,
+        "integrity": -1,
+        "publicApproval": 1,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_038",
+    "subject": "The Trade Agreement",
+    "role": "You are the chief trade negotiator for your country.",
+    "scenario": "A major trade deal would boost your economy but requires accepting lower environmental and labor standards from partner countries.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept the deal to secure economic benefits",
+      "Insist on maintaining high standards",
+      "Propose a compromise with gradual improvements",
+      "Seek alternative trading partners"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": 1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 2,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 0,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_039",
+    "subject": "The Climate Migration",
+    "role": "You are the head of international refugee affairs.",
+    "scenario": "A neighboring country is becoming uninhabitable due to climate change, and millions are seeking refuge. Your resources are limited.",
+    "question": "What would you do?",
+    "choices": [
+      "Accept all climate refugees",
+      "Implement a strict quota system",
+      "Focus on helping them adapt in place",
+      "Coordinate international resettlement"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_040",
+    "subject": "The Natural Resource",
+    "role": "You are the minister of natural resources.",
+    "scenario": "Your country has discovered a valuable natural resource in a protected area. Exploiting it would fund development but destroy the ecosystem.",
+    "question": "What would you do?",
+    "choices": [
+      "Proceed with full exploitation",
+      "Implement strict environmental safeguards",
+      "Leave the resource untouched",
+      "Seek international conservation funding"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 2,
+        "integrity": -2,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": -1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_041",
+    "subject": "The Drone Strike",
+    "role": "You are a military intelligence officer.",
+    "scenario": "A high-value terrorist target has been located, but the strike zone includes a school. The target may move within hours.",
+    "question": "What would you do?",
+    "choices": [
+      "Authorize the strike despite collateral risk",
+      "Wait for a better opportunity",
+      "Send in ground forces instead",
+      "Coordinate with local forces for capture"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": 2,
+        "integrity": -2,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_042",
+    "subject": "The Cyber Warfare",
+    "role": "You are the head of national cybersecurity.",
+    "scenario": "Your country's power grid has been compromised by a foreign state actor. They're demanding political concessions to prevent a blackout.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch a counter-cyber attack",
+      "Begin emergency system isolation",
+      "Engage in diplomatic negotiations",
+      "Publicly expose the attack"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": -2,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": 0,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_043",
+    "subject": "The Intelligence Asset",
+    "role": "You are a senior intelligence officer.",
+    "scenario": "A valuable informant has been compromised. Extracting them would reveal your intelligence network, but leaving them risks their life.",
+    "question": "What would you do?",
+    "choices": [
+      "Execute immediate extraction",
+      "Attempt a covert rescue",
+      "Provide them with new cover",
+      "Leave them in place with support"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -2,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_044",
+    "subject": "The AI Arms Race",
+    "role": "You are the director of military technology.",
+    "scenario": "A rival nation is developing autonomous weapons systems. Your country must decide whether to match their capabilities or push for international regulation.",
+    "question": "What would you do?",
+    "choices": [
+      "Accelerate autonomous weapons development",
+      "Propose international arms control",
+      "Develop defensive systems only",
+      "Focus on diplomatic pressure"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_045",
+    "subject": "The Terrorist Network",
+    "role": "You are the head of counter-terrorism operations.",
+    "scenario": "You've infiltrated a terrorist network planning a major attack. Acting now would save lives but lose the chance to capture the leadership.",
+    "question": "What would you do?",
+    "choices": [
+      "Execute immediate takedown",
+      "Continue surveillance to catch leaders",
+      "Attempt selective arrests",
+      "Share intelligence with allies"
+    ],
+    "effects": [
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 2,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 0,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": -1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 2,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 0,
+        "stability": 0,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_046",
+    "subject": "The Satellite Crisis",
+    "role": "You are the commander of space operations.",
+    "scenario": "A foreign satellite is interfering with your military communications. It's unclear if it's intentional or a technical malfunction.",
+    "question": "What would you do?",
+    "choices": [
+      "Deploy counter-satellite measures",
+      "Attempt to jam their signals",
+      "Engage in diplomatic communication",
+      "Implement alternative communication systems"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": 1,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_047",
+    "subject": "The Bioweapon Threat",
+    "role": "You are the director of biological defense.",
+    "scenario": "Intelligence suggests a hostile state is developing biological weapons. Preemptive action could prevent disaster but might trigger a larger conflict.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch a preemptive strike",
+      "Strengthen defensive measures",
+      "Seek international inspection",
+      "Develop counter-measures secretly"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -2,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 0,
+        "impact": 0,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 0,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_048",
+    "subject": "The Quantum Computing Race",
+    "role": "You are the head of advanced technology research.",
+    "scenario": "Your country is close to achieving quantum computing supremacy. This could break enemy encryption but also compromise your own security systems.",
+    "question": "What would you do?",
+    "choices": [
+      "Accelerate development for military advantage",
+      "Focus on defensive applications",
+      "Share research with allies",
+      "Implement strict security protocols"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": 1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": -1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      }
+    ]
+  },
+  {
+    "id": "scenario_049",
+    "subject": "The Nuclear Submarine",
+    "role": "You are the commander of naval operations.",
+    "scenario": "Your nuclear submarine has detected an unidentified vessel in restricted waters. It could be a threat, but engaging risks international incident.",
+    "question": "What would you do?",
+    "choices": [
+      "Engage with warning shots",
+      "Maintain surveillance only",
+      "Attempt to identify the vessel",
+      "Withdraw and report to command"
+    ],
+    "effects": [
+      {
+        "judgment": -1,
+        "stability": -2,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": -1,
+        "alignment": -2,
+        "clarity": 0
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 2,
+        "stability": 0,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 0
+      }
+    ]
+  },
+  {
+    "id": "scenario_050",
+    "subject": "The Cyber Espionage",
+    "role": "You are the director of cyber intelligence.",
+    "scenario": "Your team has discovered a foreign intelligence operation targeting your country's defense contractors. The operation could be traced back to its source.",
+    "question": "What would you do?",
+    "choices": [
+      "Launch a counter-cyber operation",
+      "Strengthen security and monitor",
+      "Expose the operation publicly",
+      "Use it to feed false information"
+    ],
+    "effects": [
+      {
+        "judgment": 0,
+        "stability": -1,
+        "agency": 2,
+        "trust": -1,
+        "impact": 1,
+        "integrity": -1,
+        "publicApproval": 0,
+        "alignment": -1,
+        "clarity": 0
+      },
+      {
+        "judgment": 2,
+        "stability": 1,
+        "agency": 1,
+        "trust": 1,
+        "impact": 0,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 0,
+        "agency": -1,
+        "trust": 1,
+        "impact": -1,
+        "integrity": 1,
+        "publicApproval": 1,
+        "alignment": 1,
+        "clarity": 1
+      },
+      {
+        "judgment": 1,
+        "stability": 1,
+        "agency": 0,
+        "trust": 1,
+        "impact": 1,
+        "integrity": 0,
+        "publicApproval": 0,
+        "alignment": 1,
+        "clarity": 0
+      }
+    ]
   }
 ]

@@ -17,10 +17,43 @@ const initialTraits: GameTraits = {
 
 const MAX_SCENARIOS = 10;
 
+// Helper function to calculate normalized and adjusted scores
+const calculateScores = (traits: GameTraits, questionCount: number) => {
+  const rawScores: {[key: string]: number} = {};
+  const normalizedScores: {[key: string]: number} = {};
+  const adjustedScores: {[key: string]: number} = {};
+
+  // Calculate raw scores
+  Object.entries(traits).forEach(([trait, data]) => {
+    rawScores[trait] = data.score;
+  });
+
+  // Calculate normalized scores (per question)
+  Object.entries(rawScores).forEach(([trait, score]) => {
+    normalizedScores[trait] = questionCount > 0 ? score / questionCount : 0;
+  });
+
+  // Calculate adjusted scores (scaled to 10 questions)
+  Object.entries(normalizedScores).forEach(([trait, score]) => {
+    adjustedScores[trait] = Math.round(score * 10);
+  });
+
+  return {
+    rawScores,
+    normalizedScores,
+    adjustedScores,
+  };
+};
+
 const GameContext = createContext<{
   gameState: GameState;
   selectChoice: (choiceIndex: number) => void;
   resetGame: () => void;
+  getScores: () => {
+    rawScores: {[key: string]: number};
+    normalizedScores: {[key: string]: number};
+    adjustedScores: {[key: string]: number};
+  };
 }>({
   gameState: {
     traits: initialTraits,
@@ -32,6 +65,11 @@ const GameContext = createContext<{
   },
   selectChoice: () => {},
   resetGame: () => {},
+  getScores: () => ({
+    rawScores: {},
+    normalizedScores: {},
+    adjustedScores: {},
+  }),
 });
 
 export const useGame = () => useContext(GameContext);
@@ -68,6 +106,7 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
 
     const selectedEffect = gameState.currentScenario.effects[choiceIndex];
     const newTraits = {...gameState.traits};
+    const currentScenarioId = gameState.currentScenario.id;
 
     // Update trait scores based on choice effects
     Object.entries(selectedEffect).forEach(([trait, score]) => {
@@ -76,21 +115,32 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
       }
     });
 
-    const nextScenario = getRandomScenario();
     const newQuestionCount = gameState.questionCount + 1;
+    const newUsedScenarioIds = [...gameState.usedScenarioIds, currentScenarioId];
+
+    // Get next scenario using updated usedScenarioIds
+    const availableScenarios = scenariosData.filter(
+      scenario => !newUsedScenarioIds.includes(scenario.id),
+    );
+
+    const nextScenario = availableScenarios.length > 0 && newQuestionCount < MAX_SCENARIOS
+      ? availableScenarios[Math.floor(Math.random() * availableScenarios.length)]
+      : null;
 
     setGameState(prev => ({
       ...prev,
       traits: newTraits,
       questionCount: newQuestionCount,
       currentScenario: nextScenario,
-      usedScenarioIds: [...prev.usedScenarioIds, prev.currentScenario?.id || ''],
+      usedScenarioIds: newUsedScenarioIds,
       isGameComplete: newQuestionCount >= MAX_SCENARIOS || nextScenario === null,
     }));
   };
 
   const resetGame = () => {
-    const initialScenario = getRandomScenario();
+    const availableScenarios = scenariosData;
+    const initialScenario = availableScenarios[Math.floor(Math.random() * availableScenarios.length)];
+    
     setGameState({
       traits: initialTraits,
       currentScenario: initialScenario,
@@ -101,9 +151,15 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
     });
   };
 
+  const getScores = () => {
+    return calculateScores(gameState.traits, gameState.questionCount);
+  };
+
   useEffect(() => {
     // Initialize first scenario
-    const initialScenario = getRandomScenario();
+    const availableScenarios = scenariosData;
+    const initialScenario = availableScenarios[Math.floor(Math.random() * availableScenarios.length)];
+    
     setGameState(prev => ({
       ...prev,
       currentScenario: initialScenario,
@@ -111,7 +167,7 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
   }, []);
 
   return (
-    <GameContext.Provider value={{gameState, selectChoice, resetGame}}>
+    <GameContext.Provider value={{gameState, selectChoice, resetGame, getScores}}>
       {children}
     </GameContext.Provider>
   );

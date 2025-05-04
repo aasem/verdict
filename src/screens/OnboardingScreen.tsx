@@ -14,24 +14,10 @@ import {RootStackParamList} from '../../App';
 
 type Props = NativeStackNavigationProp<RootStackParamList, 'Onboarding'>;
 
-// Temporary mock scenario for UI testing
-const mockScenario = {
-  id: 'scenario_001',
-  subject: 'Collateral or Consequences?',
-  role: 'You are a military commander overseeing a drone surveillance zone.',
-  scenario: 'Intel confirms a high-value target is meeting in a civilian area. The window to strike is short, but there\'s a risk of collateral damage.',
-  question: 'What would you do?',
-  choices: [
-    'Authorize the strike immediately',
-    'Delay and monitor for a cleaner opportunity',
-    'Warn allies on the ground and risk losing the target',
-    'Cancel the mission and escalate for political approval',
-  ],
-};
 
 const OnboardingScreen: React.FC = () => {
   const navigation = useNavigation<Props>();
-  const {gameState, selectChoice} = useGame();
+  const {gameState, selectChoice, getScores} = useGame();
   const [timeLeft, setTimeLeft] = useState(90);
   const [shouldNavigate, setShouldNavigate] = useState(false);
 
@@ -50,12 +36,16 @@ const OnboardingScreen: React.FC = () => {
   // Navigation effect
   useEffect(() => {
     if (shouldNavigate) {
+      const scores = getScores();
       navigation.replace('Results', {
         traits: gameState.traits,
         questionCount: gameState.questionCount,
+        rawScores: scores.rawScores,
+        normalizedScores: scores.normalizedScores,
+        adjustedScores: scores.adjustedScores,
       });
     }
-  }, [shouldNavigate, navigation, gameState.traits, gameState.questionCount]);
+  }, [shouldNavigate, navigation, gameState.traits, gameState.questionCount, getScores]);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -76,7 +66,7 @@ const OnboardingScreen: React.FC = () => {
       <View style={styles.header}>
         <Text style={styles.timerText}>Time Left: {formatTime(timeLeft)}</Text>
         <Text style={styles.questionCount}>
-          Question {gameState.questionCount + 1}/10
+          Question {Math.min(gameState.questionCount + 1, 10)}/10
         </Text>
       </View>
 
@@ -113,41 +103,43 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: '#333',
+    backgroundColor: '#252525',
   },
   timerText: {
-    color: '#fff',
+    color: '#4CAF50',
     fontSize: 18,
     fontWeight: 'bold',
   },
   questionCount: {
-    color: '#fff',
+    color: '#2196F3',
     fontSize: 16,
+    fontWeight: '600',
   },
   content: {
     flex: 1,
     padding: 16,
   },
   subject: {
-    color: '#fff',
+    color: '#FFC107',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 16,
   },
   role: {
-    color: '#ccc',
-    fontSize: 18,
+    color: '#FF5722',
+    fontSize: 20,
     marginBottom: 16,
     fontStyle: 'italic',
   },
   scenario: {
-    color: '#fff',
+    color: '#E0E0E0',
     fontSize: 18,
     marginBottom: 24,
     lineHeight: 24,
   },
   question: {
-    color: '#fff',
-    fontSize: 20,
+    color: '#FFD700',
+    fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 24,
   },
@@ -160,14 +152,19 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     borderColor: '#444',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
   },
   choiceText: {
-    color: '#fff',
+    color: '#FFFFFF',
     fontSize: 16,
     lineHeight: 22,
   },
   loadingText: {
-    color: '#fff',
+    color: '#FFFFFF',
     fontSize: 18,
     textAlign: 'center',
     marginTop: 20,

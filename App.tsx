@@ -20,6 +20,9 @@ export type RootStackParamList = {
   Results: {
     traits: GameTraits;
     questionCount: number;
+    rawScores: {[key: string]: number};
+    normalizedScores: {[key: string]: number};
+    adjustedScores: {[key: string]: number};
   };
 };
 

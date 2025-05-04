@@ -25,12 +25,14 @@ Each choice's impact on trait is categorized by magnitude:
 ## Trait Mapping
 Final trait scores are mapped to player characteristics and used for profile generation:
 
-| Score Range | Label | Use for Profiles |
-|------------|-------|------------------|
-| **≥ +8** | Dominant Trait | Core profile definer |
-| **+6 to +7** | Strong Trait | Supporting traits / refinements |
-| **-3 to -5** | Weak Trait | Adds flaw tags or secondary warnings |
-| **≤ -6** | Critical Weakness | Limits profile choices / adds major flaw tags |
+| Score Range  | Label             | Use for Profiles                                      |
+| ------------ | ----------------- | ----------------------------------------------------- |
+| **≥ +8**     | Dominant Trait    | Core profile definer — used to match main identity    |
+| **+6 to +7** | Strong Trait      | Supporting traits — refines profile or adds nuance    |
+| **0 to +5** | Neutral Trait     | Balanced trait — no strong influence on profile       |
+| **-1 to -5** | Weak Trait        | Adds flaw tags or mild limitations                    |
+| **≤ -6**     | Critical Weakness | Excludes certain profiles or triggers major flaw tags |
+
 
 ## Profile Assignments
 Based on trait scores, players are assigned one of the following profiles:
@@ -135,7 +137,7 @@ You're balanced and adaptable. No extreme traits — your strength is composure 
 - Optional: tag based on lowest trait (e.g. "Watch your Impact")
 
 ## Scenario Structure
-Each scenario in `database.json` follows this format:
+Each scenario in `scenarios.json` follows this format:
 ```json
 {
   "id": "unique_id",
@@ -144,13 +146,17 @@ Each scenario in `database.json` follows this format:
   "scenario": "Situation description",
   "question": "What would you do?",
   "choices": ["Option 1", "Option 2", "Option 3", "Option 4"],
-  "activeTraits": ["trait1", "trait2", "trait3", "trait4"],
   "effects": [
     {
-      "trait1": 2,
-      "trait2": -1,
-      "trait3": 0,
-      "trait4": 1
+      "judgment": 2,
+      "stability": -1,
+      "agency": 1,
+      "trust": 0,
+      "impact": 1,
+      "integrity": 1,
+      "publicApproval": 0,
+      "alignment": 1,
+      "clarity": 1
     },
     // ... effects for other choices
   ]
@@ -158,17 +164,16 @@ Each scenario in `database.json` follows this format:
 ```
 
 ## Scoring Rules
-- Each scenario activates 3-5 traits from the universal set
-- Each choice affects only the active traits
+- Each choice affects all nine traits
 - Trait scores range from -3 to +3
 - Final scores are cumulative across all scenarios
 - No overall score is calculated; each trait is tracked separately
 
 ## Game Flow
-1. 60-second time limit
-2. Random scenario selection
+1. 90-second time limit
+2. Random scenario selection (no repeats)
 3. Player makes choice
-4. Effects are applied to active traits
+4. Effects are applied to all traits
 5. Next scenario is presented
 6. Game ends when time runs out
 7. Final scores show cumulative effect on each trait 

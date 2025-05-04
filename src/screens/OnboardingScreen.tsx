@@ -8,10 +8,11 @@ import {
   SafeAreaView,
 } from 'react-native';
 import {useGame} from '../context/GameContext';
-import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import type {RootStackParamList} from '../../App';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../../App';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'Onboarding'>;
+type Props = NativeStackNavigationProp<RootStackParamList, 'Onboarding'>;
 
 // Temporary mock scenario for UI testing
 const mockScenario = {
@@ -28,36 +29,25 @@ const mockScenario = {
   ],
 };
 
-const OnboardingScreen = ({navigation}: Props) => {
+const OnboardingScreen: React.FC = () => {
+  const navigation = useNavigation<Props>();
   const {gameState, selectChoice} = useGame();
-  const [timeLeft, setTimeLeft] = useState(90); // 1 minute and 30 seconds
-  const [selectedChoice, setSelectedChoice] = useState<number | null>(null);
+  const [timeLeft, setTimeLeft] = useState(90);
   const [shouldNavigate, setShouldNavigate] = useState(false);
 
-  // Format time as MM:SS
-  const formatTime = (seconds: number) => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-  };
-
-  // Handle timer
+  // Timer effect
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          setShouldNavigate(true);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+    if (timeLeft > 0 && !gameState.isGameComplete) {
+      const timer = setInterval(() => {
+        setTimeLeft(prev => prev - 1);
+      }, 1000);
+      return () => clearInterval(timer);
+    } else if (timeLeft === 0 || gameState.isGameComplete) {
+      setShouldNavigate(true);
+    }
+  }, [timeLeft, gameState.isGameComplete]);
 
-    return () => clearInterval(timer);
-  }, []);
-
-  // Handle navigation when timer reaches zero
+  // Navigation effect
   useEffect(() => {
     if (shouldNavigate) {
       navigation.replace('Results', {
@@ -65,20 +55,18 @@ const OnboardingScreen = ({navigation}: Props) => {
         questionCount: gameState.questionCount,
       });
     }
-  }, [shouldNavigate, navigation, gameState]);
+  }, [shouldNavigate, navigation, gameState.traits, gameState.questionCount]);
 
-  const handleChoice = (index: number) => {
-    setSelectedChoice(index);
-    selectChoice(index);
-    setSelectedChoice(null); // Reset selection for next scenario
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
   if (!gameState.currentScenario) {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={styles.loadingContainer}>
-          <Text style={styles.loadingText}>Loading scenario...</Text>
-        </View>
+        <Text style={styles.loadingText}>Loading scenario...</Text>
       </SafeAreaView>
     );
   }
@@ -86,33 +74,25 @@ const OnboardingScreen = ({navigation}: Props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.timer}>Time Left: {formatTime(timeLeft)}</Text>
+        <Text style={styles.timerText}>Time Left: {formatTime(timeLeft)}</Text>
+        <Text style={styles.questionCount}>
+          Question {gameState.questionCount + 1}/10
+        </Text>
       </View>
 
       <ScrollView style={styles.content}>
-        <View style={styles.scenarioContainer}>
-          <Text style={styles.subject}>{gameState.currentScenario.subject}</Text>
-          <Text style={styles.role}>{gameState.currentScenario.role}</Text>
-          <Text style={styles.scenario}>{gameState.currentScenario.scenario}</Text>
-          <Text style={styles.question}>{gameState.currentScenario.question}</Text>
-        </View>
+        <Text style={styles.subject}>{gameState.currentScenario.subject}</Text>
+        <Text style={styles.role}>{gameState.currentScenario.role}</Text>
+        <Text style={styles.scenario}>{gameState.currentScenario.scenario}</Text>
+        <Text style={styles.question}>{gameState.currentScenario.question}</Text>
 
         <View style={styles.choicesContainer}>
           {gameState.currentScenario.choices.map((choice, index) => (
             <TouchableOpacity
               key={index}
-              style={[
-                styles.choiceButton,
-                selectedChoice === index && styles.selectedChoice,
-              ]}
-              onPress={() => handleChoice(index)}>
-              <Text
-                style={[
-                  styles.choiceText,
-                  selectedChoice === index && styles.selectedChoiceText,
-                ]}>
-                {choice}
-              </Text>
+              style={styles.choiceButton}
+              onPress={() => selectChoice(index)}>
+              <Text style={styles.choiceText}>{choice}</Text>
             </TouchableOpacity>
           ))}
         </View>
@@ -124,95 +104,73 @@ const OnboardingScreen = ({navigation}: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#1a1a1a',
   },
   header: {
     padding: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: '#333',
   },
-  timer: {
-    fontSize: 20,
+  timerText: {
+    color: '#fff',
+    fontSize: 18,
     fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#2196F3',
+  },
+  questionCount: {
+    color: '#fff',
+    fontSize: 16,
   },
   content: {
     flex: 1,
     padding: 16,
   },
-  scenarioContainer: {
-    marginBottom: 24,
-  },
   subject: {
+    color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 12,
-    color: '#000000',
+    marginBottom: 16,
   },
   role: {
+    color: '#ccc',
     fontSize: 18,
     marginBottom: 16,
-    color: '#2E7D32',
-    fontWeight: 'bold',
+    fontStyle: 'italic',
   },
   scenario: {
+    color: '#fff',
     fontSize: 18,
+    marginBottom: 24,
     lineHeight: 24,
-    marginBottom: 16,
-    color: '#D32F2F',
-    fontWeight: 'bold',
   },
   question: {
+    color: '#fff',
     fontSize: 20,
-    fontWeight: '600',
-    marginBottom: 8,
-    color: '#000000',
+    fontWeight: 'bold',
+    marginBottom: 24,
   },
   choicesContainer: {
-    gap: 16,
-    paddingHorizontal: 8,
+    gap: 12,
   },
   choiceButton: {
-    padding: 20,
-    borderRadius: 12,
-    borderWidth: 1.5,
-    borderColor: '#E0E0E0',
-    backgroundColor: '#FFFFFF',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  selectedChoice: {
-    borderColor: '#2196F3',
-    backgroundColor: '#E3F2FD',
-    shadowColor: '#2196F3',
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
-    elevation: 3,
+    backgroundColor: '#333',
+    padding: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#444',
   },
   choiceText: {
+    color: '#fff',
     fontSize: 16,
-    color: '#424242',
     lineHeight: 22,
   },
-  selectedChoiceText: {
-    color: '#1976D2',
-    fontWeight: '600',
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   loadingText: {
+    color: '#fff',
     fontSize: 18,
-    color: '#666666',
+    textAlign: 'center',
+    marginTop: 20,
   },
 });
 

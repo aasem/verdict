@@ -15,6 +15,8 @@ const initialTraits: GameTraits = {
   clarity: {name: 'Clarity', score: 0},
 };
 
+const MAX_SCENARIOS = 10;
+
 const GameContext = createContext<{
   gameState: GameState;
   selectChoice: (choiceIndex: number) => void;
@@ -26,6 +28,7 @@ const GameContext = createContext<{
     questionCount: 0,
     startTime: Date.now(),
     usedScenarioIds: [],
+    isGameComplete: false,
   },
   selectChoice: () => {},
   resetGame: () => {},
@@ -42,18 +45,18 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
     questionCount: 0,
     startTime: Date.now(),
     usedScenarioIds: [],
+    isGameComplete: false,
   });
 
-  const getRandomScenario = (): Scenario => {
+  const getRandomScenario = (): Scenario | null => {
     // Filter out scenarios that have already been used
     const availableScenarios = scenariosData.filter(
       scenario => !gameState.usedScenarioIds.includes(scenario.id),
     );
 
-    // If all scenarios have been used, return the first scenario
-    // This should never happen in a 90-second game
-    if (availableScenarios.length === 0) {
-      return scenariosData[0];
+    // If all scenarios have been used or we've reached max scenarios, return null
+    if (availableScenarios.length === 0 || gameState.questionCount >= MAX_SCENARIOS) {
+      return null;
     }
 
     const randomIndex = Math.floor(Math.random() * availableScenarios.length);
@@ -74,31 +77,36 @@ export const GameProvider: React.FC<{children: React.ReactNode}> = ({
     });
 
     const nextScenario = getRandomScenario();
+    const newQuestionCount = gameState.questionCount + 1;
 
     setGameState(prev => ({
       ...prev,
       traits: newTraits,
-      questionCount: prev.questionCount + 1,
+      questionCount: newQuestionCount,
       currentScenario: nextScenario,
       usedScenarioIds: [...prev.usedScenarioIds, prev.currentScenario?.id || ''],
+      isGameComplete: newQuestionCount >= MAX_SCENARIOS || nextScenario === null,
     }));
   };
 
   const resetGame = () => {
+    const initialScenario = getRandomScenario();
     setGameState({
       traits: initialTraits,
-      currentScenario: getRandomScenario(),
+      currentScenario: initialScenario,
       questionCount: 0,
       startTime: Date.now(),
       usedScenarioIds: [],
+      isGameComplete: false,
     });
   };
 
   useEffect(() => {
     // Initialize first scenario
+    const initialScenario = getRandomScenario();
     setGameState(prev => ({
       ...prev,
-      currentScenario: getRandomScenario(),
+      currentScenario: initialScenario,
     }));
   }, []);
 

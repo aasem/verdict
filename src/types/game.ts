@@ -18,7 +18,6 @@ export type Scenario = {
   scenario: string;
   question: string;
   choices: string[];
-  activeTraits: string[];
   effects: Effect[];
 };
 
@@ -28,4 +27,5 @@ export type GameState = {
   questionCount: number;
   startTime: number;
   usedScenarioIds: string[];
+  isGameComplete: boolean;
 }; 
